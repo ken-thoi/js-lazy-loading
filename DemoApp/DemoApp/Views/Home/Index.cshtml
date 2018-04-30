@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!--Thay SRC = DATA-ORIGINAL, Thêm class LAZY-->
+<div class="row">
+    <div class="col-md-12">
+        <h4>Getting started</h4>
+        <p>
+            <img class="lazy" data-original="../images/ab132195-a09s-43bc-83f8-86c45bdf6ea5.jpg" alt="Image" />
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <hr />
+    </div>
+    <div class="col-md-12">
+        <h4>Get more libraries</h4>
+        <p>
+            <img class="lazy" data-original="../images/b25c580c-98e7-411f-b363-afed3d7a1769.jpg" alt="Image" />
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <hr />
+    </div>
+    <div class="col-md-12">
+        <h4>Web Hosting</h4>
+        <p>
+            <img class="lazy" data-original="../images/eb722195-1c88-43bc-83f8-86c45bdf6ea5.jpg" alt="Image" />
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <hr />
+    </div>
+    <div class="col-md-12">
+        <h4>Web Development</h4>
+        <p>
+            <img class="lazy" data-original="../images/eb722195-a09s-43bc-83f8-86c45bdf6ea5.jpg" alt="Image" />
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <hr />
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+    </script>
+}
